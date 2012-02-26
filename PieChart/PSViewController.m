@@ -9,11 +9,21 @@
 #import "PSViewController.h"
 
 @implementation PSViewController
+@synthesize pieView;
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
+}
+- (IBAction)animatePieSlices:(id)sender {
+	NSMutableArray *randomNumbers = [NSMutableArray array];
+	int count = 1 + rand() % 10;
+	for (int i = 0; i < count; i++) {
+		[randomNumbers addObject:[NSNumber numberWithInt:rand() % 100]];
+	}
+	
+	pieView.sliceValues = randomNumbers;
 }
 
 #pragma mark - View lifecycle
@@ -26,6 +36,7 @@
 
 - (void)viewDidUnload
 {
+	[self setPieView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

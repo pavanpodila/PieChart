@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PieView.h"
 
 @interface PSViewController : UIViewController
+@property (weak, nonatomic) IBOutlet PieView *pieView;
 
 @end

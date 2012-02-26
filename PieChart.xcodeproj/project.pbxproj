@@ -15,6 +15,9 @@
 		675C613914FAD02400B4C6E6 /* PSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 675C613814FAD02400B4C6E6 /* PSAppDelegate.m */; };
 		675C613C14FAD02400B4C6E6 /* PSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 675C613B14FAD02400B4C6E6 /* PSViewController.m */; };
 		675C613F14FAD02400B4C6E6 /* PSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 675C613D14FAD02400B4C6E6 /* PSViewController.xib */; };
+		675C615014FAD10A00B4C6E6 /* PieSliceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 675C614D14FAD10A00B4C6E6 /* PieSliceLayer.m */; };
+		675C615114FAD10A00B4C6E6 /* PieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 675C614F14FAD10A00B4C6E6 /* PieView.m */; };
+		675C615314FAD1ED00B4C6E6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 675C615214FAD1ED00B4C6E6 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +25,20 @@
 		675C612814FAD02400B4C6E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		675C612A14FAD02400B4C6E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		675C612C14FAD02400B4C6E6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		675C613014FAD02400B4C6E6 /* PieChart-Info.plist */ = {isa = PBXFileReference; path = "PieChart-Info.plist"; sourceTree = "<group>"; };
+		675C613014FAD02400B4C6E6 /* PieChart-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PieChart-Info.plist"; sourceTree = "<group>"; };
 		675C613214FAD02400B4C6E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		675C613414FAD02400B4C6E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		675C613614FAD02400B4C6E6 /* PieChart-Prefix.pch */ = {isa = PBXFileReference; path = "PieChart-Prefix.pch"; sourceTree = "<group>"; };
-		675C613714FAD02400B4C6E6 /* PSAppDelegate.h */ = {isa = PBXFileReference; path = PSAppDelegate.h; sourceTree = "<group>"; };
+		675C613614FAD02400B4C6E6 /* PieChart-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PieChart-Prefix.pch"; sourceTree = "<group>"; };
+		675C613714FAD02400B4C6E6 /* PSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSAppDelegate.h; sourceTree = "<group>"; };
 		675C613814FAD02400B4C6E6 /* PSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSAppDelegate.m; sourceTree = "<group>"; };
-		675C613A14FAD02400B4C6E6 /* PSViewController.h */ = {isa = PBXFileReference; path = PSViewController.h; sourceTree = "<group>"; };
+		675C613A14FAD02400B4C6E6 /* PSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSViewController.h; sourceTree = "<group>"; };
 		675C613B14FAD02400B4C6E6 /* PSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSViewController.m; sourceTree = "<group>"; };
 		675C613E14FAD02400B4C6E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PSViewController.xib; sourceTree = "<group>"; };
+		675C614C14FAD10A00B4C6E6 /* PieSliceLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieSliceLayer.h; sourceTree = "<group>"; };
+		675C614D14FAD10A00B4C6E6 /* PieSliceLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieSliceLayer.m; sourceTree = "<group>"; };
+		675C614E14FAD10A00B4C6E6 /* PieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieView.h; sourceTree = "<group>"; };
+		675C614F14FAD10A00B4C6E6 /* PieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieView.m; sourceTree = "<group>"; };
+		675C615214FAD1ED00B4C6E6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675C615314FAD1ED00B4C6E6 /* QuartzCore.framework in Frameworks */,
 				675C612914FAD02400B4C6E6 /* UIKit.framework in Frameworks */,
 				675C612B14FAD02400B4C6E6 /* Foundation.framework in Frameworks */,
 				675C612D14FAD02400B4C6E6 /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +76,7 @@
 		675C612714FAD02400B4C6E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				675C615214FAD1ED00B4C6E6 /* QuartzCore.framework */,
 				675C612814FAD02400B4C6E6 /* UIKit.framework */,
 				675C612A14FAD02400B4C6E6 /* Foundation.framework */,
 				675C612C14FAD02400B4C6E6 /* CoreGraphics.framework */,
@@ -77,6 +87,10 @@
 		675C612E14FAD02400B4C6E6 /* PieChart */ = {
 			isa = PBXGroup;
 			children = (
+				675C614C14FAD10A00B4C6E6 /* PieSliceLayer.h */,
+				675C614D14FAD10A00B4C6E6 /* PieSliceLayer.m */,
+				675C614E14FAD10A00B4C6E6 /* PieView.h */,
+				675C614F14FAD10A00B4C6E6 /* PieView.m */,
 				675C613714FAD02400B4C6E6 /* PSAppDelegate.h */,
 				675C613814FAD02400B4C6E6 /* PSAppDelegate.m */,
 				675C613A14FAD02400B4C6E6 /* PSViewController.h */,
@@ -164,6 +178,8 @@
 				675C613514FAD02400B4C6E6 /* main.m in Sources */,
 				675C613914FAD02400B4C6E6 /* PSAppDelegate.m in Sources */,
 				675C613C14FAD02400B4C6E6 /* PSViewController.m in Sources */,
+				675C615014FAD10A00B4C6E6 /* PieSliceLayer.m in Sources */,
+				675C615114FAD10A00B4C6E6 /* PieView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
