@@ -1,4 +1,4 @@
-The source code in this repository should be read along side my [blog post on creating an animated Pie Chart]().
+The source code in this repository should be read along side my [blog post on creating an animated Pie Chart](http://blog.pixelingene.com/2012/02/animating-pie-slices-using-a-custom-calayer/).
 
 __Some of the concepts in this code include:__
 
