@@ -1,7 +1,7 @@
 The source code in this repository should be read along side my [blog post on creating an animated Pie Chart]().
 
-Some of the concepts in this code include:
+__Some of the concepts in this code include:__
 
 - Use of Custom `CALayer`, the `PieSliceLayer`
 - Animatable custom properties on a `CALayer`
-- A `UIView` that hosts the `PieSliceLayer`s
+- A `UIView` that hosts the `PieSliceLayer`
